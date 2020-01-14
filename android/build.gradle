@@ -39,6 +39,9 @@ repositories {
   maven {
       url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
   }
+  maven { // <---- Add this block
+      url("$rootDir/../node_modules/react-native-jitsi-meet/jitsi-sdk")
+  }
   google()
   mavenCentral()
   jcenter()
